@@ -36,7 +36,10 @@ const TableRowItem: React.FC<ITableRowProps> = ({
       <TableCell>{user.email}</TableCell>
       <TableCell>{user.score}</TableCell>
       <TableCell>
-        <IconButton onClick={() => onUserDelete(user.userId)}>
+        <IconButton
+          data-testid={'delete-button'}
+          onClick={() => onUserDelete(user.userId)}
+        >
           <DeleteForeverRoundedIcon />
         </IconButton>
       </TableCell>

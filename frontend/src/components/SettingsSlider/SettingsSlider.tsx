@@ -17,6 +17,7 @@ const SettingsSlider: React.FC<ISettingsSliderProps> = ({
         value={displayCount}
         onChange={onChange}
         aria-labelledby="discrete-slider"
+        data-testid="settings-slider"
         valueLabelDisplay="auto"
         step={1}
         marks={[
